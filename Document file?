@@ -1,0 +1,7 @@
+echo "# Setup-Minecraft-in-docker-integrated-with-Playit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/bugs1toy/Setup-Minecraft-in-docker-integrated-with-Playit.git
+git push -u origin main
