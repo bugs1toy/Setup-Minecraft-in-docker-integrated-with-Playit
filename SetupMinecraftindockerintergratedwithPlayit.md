@@ -44,13 +44,11 @@ Step 3: Create a non-disposable docker container with playit intergrated into it
       <img width="1578" height="1220" alt="image" src="https://github.com/user-attachments/assets/3be38c39-7e99-4d13-bd4b-d2616bcd7f4a" />
 
       
-    • Paste the command into the cli for your server do not click enter yet, we need to edit the command if you do not want it to be disposable. Replace “- -rm”  with “-d” without the quotes. 
+    • Paste the command into the cli for your server do not click enter yet, we need to edit the command if you do not want it to be disposable. Replace “--rm”  with “-d” without the quotes. 
        
-        ◦ Optional: add “- -name” if you want to give it a non randomly generated name
+        ◦ Optional: add “--name” if you want to give it a non randomly generated name
             
-            ▪ Ex: docker run -d -it - - name PlayitExample - - net=host -e SECRET_KEY (everything else in the copied command)
-               
-                • Note: I had to add a space between the dashes for the sections with double dash otherwise in the program I used to type this document would automatically create one long line. Do not add a space between the dashes for the sections with a double dash
+            ▪ Ex: docker run -d -it -- name PlayitExample -- net=host -e SECRET_KEY (everything else in the copied command)
             
             ▪ If you have already created the docker container and didn’t give it a name, review below
                
